@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Assistant Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='saba.png') }}" alt="saba" id="openChatBtn">
+    <div id="chatPopup" class="chat-popup">
+        <div class="chat-header">
+            <img src="{{ url_for('static', filename='saba.png') }}" alt="SABA" class='saba'>
+            <div class="header-text">
+                <h1>Ask SABA</h1>
+            </div>
+            <span class="closeBtn" id="closeChatBtn">&times;</span>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="chat-options">
+                <button id = "op1">Code of Conduct:</button>
+                <button id = "op2">Time Off Policy</button>
+                <button id = "op3">Remote Work Policy</button>
+                <button id = "op4">Performance Management Policy</button>
+                <button id = "op5">Intellectual Property Policy</button>
+                <button id = "op6">Anti-Discrimination and Harassment Policy</button>
+                <button id = "op7">Health and Safety Policy</button>
+                <button id = "op8">IT Security Policy</button>
+                <button id = "op9">Customer Site Visit Policy</button>
+                <button id = "op10">Bring Your Own System (BYOS) Computer Policy</button>
+                <button id = "op11">Daily Work Shift Policy</button>
+                <button id = "op12">Annual Appraisal Policy</button>
+                <button id = "op13">Notice period</button>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="user-input" placeholder="Type a message...">
+            <button id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script3.js') }}"></script>
+</body>
+</html>
